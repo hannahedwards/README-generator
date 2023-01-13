@@ -1,5 +1,5 @@
 // requiring packages to run application
-const inquire = require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
 const MarkDown = require ('./utils/generateMarkdown.js');
 
@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Installtion',
+        name: 'Installation',
         message: 'How do you install this project?',
     },
     {
@@ -28,7 +28,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Contribution Guidelines',
+        name: 'Contribution',
         message: 'Any Important information that contributors should know?',
     },
     {
@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'license',
+        name: 'License',
         message: 'What licenses would you like your project to have?',
         choices: ['Academic Free License v3.0', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Do What The F*ck You Want To Public License', 'Educational Community License v2.0', 'ISC', 'MIT', 'Open Software License 3.0'],
         filter(val){
@@ -58,10 +58,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function runInquirer() {
+    return inquirer.prompt(questions)
+    .then((values) => {
+        const mark = MarkDown.generateReadme(values)
+        fs.writeFile('README.md', mark, function (error){
+            if (error){
+                console.log('OOPS! file not saved.', error)
+            }else{
+                console.log('NICE! your new readme file has been added in this folder!')
+            }
+        })
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+runInquirer()
