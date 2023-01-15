@@ -51,13 +51,11 @@ const questions = [
         name: 'License',
         message: 'What licenses would you like your project to have?',
         choices: ['Academic Free License v3.0', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Do What The F*ck You Want To Public License', 'Educational Community License v2.0', 'ISC', 'MIT', 'Open Software License 3.0'],
-        filter(val){
-            return val.toLowerCase();
-        }
     },
 ];
 
 // TODO: Create a function to write README file
+//will alert you and not create the file if any errors are caught
 function runInquirer() {
     return inquirer.prompt(questions)
     .then((values) => {
@@ -74,5 +72,5 @@ function runInquirer() {
         console.log(error)
     })
 }
-
+//runs the application!
 runInquirer()

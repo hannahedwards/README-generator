@@ -2,7 +2,6 @@ class generateMarkDown {
   static generateReadme(values) {
     return `
 # ${values.Title}
-${this.renderLicenseBadge(values.license)}
 ## Table of Contents
 - [Description of this project](#Description)
 - [How to install this project](#Installation)
@@ -23,7 +22,7 @@ ${values.Contribution}
 ${values.Email}
 ${values.GitHub}
 ## License
-${this.renderLicenseSection(values.license)}
+${values.License}
 `}
 } 
 module.exports = generateMarkDown
