@@ -8,7 +8,7 @@ class generateMarkDown {
 - [How to use this project](#Usage)
 - [How to condribute to this project](#Contribution)
 - [Testing](#Tests)
-- [Contact information](#Email, #GitHub)
+- [Questions](#Email, #GitHub)
 - [Project license](#License)
 ## Description
 ${values.Description}
@@ -18,7 +18,7 @@ ${values.Installation}
 ${values.Usage}
 ## Contribution Guidelines
 ${values.Contribution}
-## Questions about this application
+## Questions
 ${values.Email}
 ${values.GitHub}
 ## License
