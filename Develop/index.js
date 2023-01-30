@@ -42,8 +42,8 @@ const questions = [
         message: 'Whats your email?',
     },
     {
-        type: 'link',
-        name: 'github',
+        type: 'input',
+        name: 'GitHub',
         message: 'Whats the GitHub username attached to this project?',
     },
     {

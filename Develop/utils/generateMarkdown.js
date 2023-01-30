@@ -24,7 +24,7 @@ ${values.Tests}
 ## Questions
 Please feel free to reach out to me at: ${values.Email}
 ## My GitHub
-Link to my GitHub Repo: https://github.com/${values.GitHub}
+Link to GitHub: https://github.com/${values.GitHub}
 ## License
 ${values.License}
 `}
