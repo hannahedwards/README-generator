@@ -42,9 +42,9 @@ const questions = [
         message: 'Whats your email?',
     },
     {
-        type: 'input',
-        name: 'GitHub',
-        message: 'Whats the GitHub attached to this project?',
+        type: 'link',
+        name: 'github',
+        message: 'Whats the GitHub username attached to this project?',
     },
     {
         type: 'list',

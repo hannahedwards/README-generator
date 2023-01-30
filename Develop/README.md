@@ -1,7 +1,5 @@
-class generateMarkDown {
-  static generateReadme(values) {
-    return `
-# ${values.Title}
+
+# readme
 ## Table of Contents
 - [Description of this project](#Description)
 - [How to install this project](#Installation)
@@ -12,21 +10,18 @@ class generateMarkDown {
 - [My Github](#GitHub)
 - [Project license](#License)
 ## Description
-${values.Description}
+create readme
 ## Installation 
-${values.Installation}
+command line
 ## Usage
-${values.Usage}
+na
 ## Contribution Guidelines
-${values.Contribution}
+na
 ## Testing
-${values.Tests}
+na
 ## Questions
-Please feel free to reach out to me at: ${values.Email}
+Please feel free to reach out to me at: hannah
 ## My GitHub
-Link to my GitHub Repo: https://github.com/${values.GitHub}
+Link to my GitHub Repo: https://github.com/hannahedwards/undefined
 ## License
-${values.License}
-`}
-} 
-module.exports = generateMarkDown
+Academic Free License v3.0
