@@ -1,3 +1,4 @@
+//this is the layout for my readme file. it puts all th information in the right places.
 class generateMarkDown {
   static generateReadme(values) {
     return `
@@ -29,4 +30,5 @@ Link to GitHub: https://github.com/${values.GitHub}
 ${values.License}
 `}
 } 
+//now our lovely new readme will be formated and created.
 module.exports = generateMarkDown

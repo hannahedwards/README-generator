@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'What licenses would you like your project to have?',
         choices: ['Academic Free License v3.0', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Do What The F*ck You Want To Public License', 'Educational Community License v2.0', 'ISC', 'MIT', 'Open Software License 3.0'],
     },
@@ -60,7 +60,7 @@ function runInquirer() {
     return inquirer.prompt(questions)
     .then((values) => {
         const mark = MarkDown.generateReadme(values)
-        fs.writeFile('README.md', mark, function (error){
+        fs.writeFile('newREADME.md', mark, function (error){
             if (error){
                 console.log('OOPS! file not saved.', error)
             }else{
