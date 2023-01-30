@@ -4,7 +4,7 @@
 - [Description of this project](#Description)
 - [How to install this project](#Installation)
 - [How to use this project](#Usage)
-- [How to condribute to this project](#Contribution)
+- [How to contribute to this project](#Contribution)
 - [Testing](#Tests)
 - [Questions](#Email)
 - [My Github](#GitHub)
