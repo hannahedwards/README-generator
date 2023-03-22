@@ -6,22 +6,18 @@ class generateMarkDown {
 ## Table of Contents
 - [Description of this project](#Description)
 - [How to install this project](#Installation)
-- [How to use this project](#Usage)
+- [Walk through video link](#walk-through)
 - [How to condribute to this project](#Contribution)
-- [Testing](#Tests)
+- [Screen Shots of this project](#Screen-shots)
 - [Questions](#Email)
 - [My Github](#GitHub)
 - [Project license](#License)
 ## Description
 ${values.Description}
 ## Installation 
-${values.Installation}
-## Usage
-${values.Usage}
-## Contribution Guidelines
 ${values.Contribution}
-## Testing
-${values.Tests}
+## Screen shots of this project
+${values.Screenshots}
 ## Questions
 Please feel free to reach out to me at: ${values.Email}
 ## My GitHub

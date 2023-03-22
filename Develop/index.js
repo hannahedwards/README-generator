@@ -18,23 +18,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Installation',
-        message: 'How do you install this project?',
-    },
-    {
-        type: 'input',
-        name: 'Usage',
-        message: 'Any usage information that might be helpful?',
-    },
-    {
-        type: 'input',
         name: 'Contribution',
         message: 'Any Important information that contributors should know?',
     },
     {
         type: 'input',
-        name: 'Tests',
-        message: 'Testing instructions',
+        name: 'Screenshots',
+        message: 'screen shots',
     },
     {
         type: 'input',
